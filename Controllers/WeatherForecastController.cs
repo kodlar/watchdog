@@ -29,5 +29,14 @@ namespace WebApplicationLog.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet]
+        [Route("Daddy")]
+
+        public virtual Task<string> SetMeTheError()
+        {
+            throw new NotImplementedException("hehehe");
+            return Task.FromResult("test");
+        }
     }
 }
